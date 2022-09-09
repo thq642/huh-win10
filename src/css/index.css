@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@layer components {
+  .reve {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+
+  .text-shadow {
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5),
+      0 1px 0 rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.5),
+      1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5),
+      1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .col {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .res-1 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  .res-2 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .res-2-5 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .res-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .res-3-5 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .input-halve {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .input-full {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .settings_container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .settings_container {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+
+  .hexcolor-small .react-colorful {
+    height: 250px;
+    width: 240px;
+  }
+
+}
+@tailwind utilities;
